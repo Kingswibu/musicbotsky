@@ -53,7 +53,7 @@ IST = pytz.timezone(Config.TIME_ZONE)
 if Config.DATABASE_URI:
     from utils import db
 
-HOME_TEXT = "<b>Hey  [{}](tg://user?id={}) 🙋‍♂️\n\nIam A Bot Built To Play or Stream Videos In Telegram VoiceChats.\nI Can Stream Any YouTube Video Or A Telegram File Or Even A YouTube Live.</b>"
+HOME_TEXT = "<b>ʜᴇʏ  [{}](tg://user?id={}) 🙋‍♂️\n\nAᴋᴜ Aᴅᴀʟᴀʜ Bᴏᴛ Mᴜsɪᴄ Tᴇʟᴇɢʀᴀᴍ.\nAᴋᴜ Bɪsᴀ Mᴇᴍᴜᴛᴀʀ Mᴜsɪᴄ Dᴀɴ Vɪᴅᴇᴏ Dɪ Vᴏɪᴄᴇ Cʜᴀᴛ.</b>"
 admin_filter=filters.create(is_admin) 
 
 @Client.on_message(filters.command(['start', f"start@{Config.BOT_USERNAME}"]))
@@ -129,12 +129,12 @@ async def start(client, message):
         return
     buttons = [
         [
-            InlineKeyboardButton('⚙️ Update Channel', url='https://t.me/subin_works'),
-            InlineKeyboardButton('🧩 Source', url='https://github.com/subinps/VCPlayerBot')
+            InlineKeyboardButton('📠 ᴜᴘᴅᴀᴛᴇ', url='https://t.me/skytrixch'),
+            InlineKeyboardButton('ᴏᴡɴᴇʀ 👩‍💻', url='https://t.me/skytrixsz')
         ],
         [
-            InlineKeyboardButton('👨🏼‍🦯 Help', callback_data='help_main'),
-            InlineKeyboardButton('🗑 Close', callback_data='close'),
+            InlineKeyboardButton('📚 ʜᴇʟᴘ', callback_data='help_main'),
+            InlineKeyboardButton('ᴋᴇᴍʙᴀʟɪ 🔙', callback_data='close'),
         ]
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -188,11 +188,11 @@ async def show_help(client, message):
 async def repo_(client, message):
     buttons = [
         [
-            InlineKeyboardButton('🧩 Repository', url='https://github.com/subinps/VCPlayerBot'),
-            InlineKeyboardButton('⚙️ Update Channel', url='https://t.me/subin_works'),     
+            InlineKeyboardButton('🧩 Repository', url='https://nekopoi.com'),
+            InlineKeyboardButton('⚙️ Update Channel', url='https://t.me/skytrixch'),     
         ],
         [
-            InlineKeyboardButton("🎞 How to Deploy", url='https://youtu.be/mnWgZMrNe_0'),
+            InlineKeyboardButton("👩‍💻 Owner", url='https://t.me/skytrixsz'),
             InlineKeyboardButton('🗑 Close', callback_data='close'),
         ]
     ]
